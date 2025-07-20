@@ -5,7 +5,7 @@ import numpy as np
 import librosa
 import tensorflow as tf
 
-# Function to send a LoRa alert (pseudocode – replace with your actual implementation)
+# Function to send a LoRa alert 
 def send_lora_alert(message):
     # Insert your LoRa library code here to send the message
     print("LoRa Alert Sent:", message)
@@ -64,7 +64,7 @@ def run_inference(file_path):
 class_names = ['Gunshot', 'NonThreat', 'Vehicle', 'Wood_Cutting']
 
 # Example: Inference on a new audio file
-test_audio_file = r"C:\Users\rpheo\Downloads\laubhacker-42473.mp3"  # Update with your test file path
+test_audio_file = r""  # Update with your test file path
 pred_class, conf = run_inference(test_audio_file)
 pred_label = class_names[pred_class]
 print(f"Predicted: {pred_label} with confidence {conf:.2f}")
